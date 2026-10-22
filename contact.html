@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Enquiry | Candy Travels India, Greater Noida West</title>
+  <meta name="description" content="Enquire with Candy Travels India for Force Urbania group tours or partner-booked cars. Address: Grandthum, Techzone 4, Greater Noida West.">
+  <meta name="keywords" content="Candy Travels India contact, Grandthum Techzone 4 travel, Greater Noida West Force Urbania booking">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main">
+    <header class="page-hero">
+      <div class="section-narrow">
+        <p class="eyebrow">Contact / Enquiry</p>
+        <h1>Tell us about your trip.</h1>
+        <p>Share your dates, destination and group size. We will reply on WhatsApp or email with Force Urbania availability or partner-car options for your trip.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-narrow grid-2">
+        <form id="enquiry-form" novalidate>
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" title="Enter exactly 10 digits" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="travel_start_date">Travel start date</label>
+            <input id="travel_start_date" name="travel_start_date" type="date" required>
+          </div>
+          <div>
+            <label for="travel_end_date">Travel end date</label>
+            <input id="travel_end_date" name="travel_end_date" type="date" required>
+          </div>
+          <div>
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select</option>
+              <option>Mathura</option>
+              <option>Vrindavan</option>
+              <option>Mathura &amp; Vrindavan</option>
+              <option>Mathura Vrindavan</option>
+              <option>Mussoorie</option>
+              <option>Shimla</option>
+              <option>Manali</option>
+              <option>Golu Devta Temple</option>
+              <option>Kainchi Dham Mandir</option>
+              <option>Khatu Shyam</option>
+              <option>Haridwar</option>
+              <option>Rishikesh</option>
+              <option>Agra</option>
+              <option>Bharatpur Bird Sanctuary</option>
+              <option>Agra &amp; Bharatpur Bird Sanctuary</option>
+              <option>Nainital</option>
+              <option>Lansdowne</option>
+              <option>Other outstation</option>
+            </select>
+          </div>
+          <div>
+            <label for="group_size">Group size</label>
+            <input id="group_size" name="group_size" type="number" min="1" max="16" value="8" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Pickup point, number of nights, any elders or children…"></textarea>
+          </div>
+          <button class="btn btn-gold" type="submit">Send enquiry</button>
+          <p id="form-status" class="form-status" role="status"></p>
+          <p class="lede">Your enquiry is sent to our email and WhatsApp. If email delivery is not configured yet, the form opens WhatsApp and an email draft with your details.</p>
+        </form>
+
+        <aside>
+          <div class="panel">
+            <h2>Reach us</h2>
+            <p><strong data-config="companyName"></strong><br>
+              <span data-config="address"></span></p>
+            <p>Phone: <a data-href="tel"><span data-config="phoneDisplay"></span></a><br>
+              Email: <a data-href="mail"><span data-config="email"></span></a><br>
+              <span data-config="hours"></span></p>
+            <div class="cta-row">
+              <a class="btn btn-gold" data-href="whatsapp">WhatsApp</a>
+              <a class="btn btn-outline" data-href="maps">Open in Maps</a>
+            </div>
+          </div>
+          <figure class="office-photo">
+            <img src="images/Grandthum-site.jpg" alt="Grandthum commercial towers under construction in Greater Noida West" loading="lazy">
+            <figcaption>Grandthum site photograph · Source: <a href="https://www.grandthum.com/project-information.php" target="_blank" rel="noopener noreferrer">Grandthum official project updates</a></figcaption>
+          </figure>
+          <iframe class="map-frame" data-map-embed title="Candy Travels India office map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
